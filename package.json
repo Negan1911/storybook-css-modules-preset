@@ -1,0 +1,8 @@
+{
+  "name": "storybook-css-modules-preset",
+  "version": "1.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:negan1911/storybook-css-modules-preset.git",
+  "author": "Nahuel Veron <nahuelav96@gmail.com>",
+  "license": "MIT"
+}
