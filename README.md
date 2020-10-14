@@ -7,7 +7,7 @@ basically means that, if you were using `postcss-loader` or any other extra
 webpack loader, it will be also applied to css modules.
 
 For using it:
-1. run `npm install -D storybook-css-modules-preset` or `yarn add -D storybook-css-modules`.
+1. run `npm install -D storybook-css-modules-preset` or `yarn add -D storybook-css-modules-preset`.
 1.just add the following plugin on your `./storybook/main.js`:
 
 ```diff
