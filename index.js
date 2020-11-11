@@ -19,7 +19,7 @@ module.exports = {
           ...cssRule,
           test: /\.module\.css$/,
           use: cssRule.use.map(_ => {
-            if (_ && _.loader && _.loader.includes('css-loader')) {
+            if (_ && _.loader && _.loader.match('/\Wcss-loader/g')) {
               return {
                 ..._,
                 options: {
