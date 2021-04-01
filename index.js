@@ -2,7 +2,7 @@ const css_regex = '/\\.css$/'
 
 module.exports = {
   webpackFinal(config = {}, options = {}) {
-  const cssRule = config.module.rules.find(_ => _.test.toString() === css_regex)
+  const cssRule = config.module.rules.find(_ => _ && _.test && _.test.toString() === css_regex)
 
 
   return {
@@ -10,7 +10,7 @@ module.exports = {
     module: {
       ...config.module,
       rules: [
-        ...config.module.rules.filter(_ => _.test.toString() !== css_regex),
+        ...config.module.rules.filter(_ => _ && _.test && _.test.toString() !== css_regex),
         {
           ...cssRule,
           exclude: /\.module\.css$/,
